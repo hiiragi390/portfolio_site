@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1900">
+  <title>TypeScript HTML App</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Pollyfill script -->
+  <script src="https://unpkg.com/core-js-bundle@3.6.1/minified.js"></script>
+  <!-- Live2DCubismCore script -->
+  <script src = "../../../Core/live2dcubismcore.js"></script>
+  <!-- Build script -->
+  <script src = "./dist/bundle.js"></script>
+  <script type="text/javascript" src="support.js"></script>
+  <link rel="stylesheet" type="text/css" href="all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="tp">
+  <h1 class="left top">想像したこと、全部<span class="top-acc">形</span>に。</h1>
+  <div>
+  <div class="col">
+    <div id="live2d">
+      <div class="card card-skin" >
+        <div class="card__textbox">
+          <div class="card__titletext b_title">
+            About Me
+          </div>
+          <div class="card__overviewtext">
+            <span class="top_txt">河西柊美<br>東洋大学情報連携学部3年<br>デザインコース</span><br>
+          </div>
+          <div class="card__overviewtext">
+            授業・サークル・自主制作を問わず、<br>デザインとそれを実際の形に落とし込むことに<br>全力を注いでいます。
+          </div>
+        </div>
+      </div> 
+      <div class="card card-skin">
+        <div class="card__textbox">
+          <div class="card__titletext b_title">
+            Skills
+          </div>
+          <div class="card__overviewtext top_txt">
+            Unity<br>Clip Studio Paint Pro<br>Illustrator<br>PhotoShop<br>Fusion360<br>Live2D Cubism Editor
+          </div>
+        </div>
+      </div>
+      <div class="card card-skin">
+        <div class="card__textbox" id="pro">
+          <div class="card__titletext b_title">
+            制作物
+          </div>
+        </div>
+      </div> 
+    <div class="card card-skin">
+      <div class="">
+        <img class="card__imgframe" src="myfile/game_start.png">
+      </div>
+        <div class="card__textbox">
+          <div class="card__titletext">
+            Geminos
+          </div>
+          <div class="card__overviewtext">
+            2D強制横スクロールアクションゲーム<br>
+            コード、グラフィック・UIデザイン担当<br>
+            Unity, Clip Studio Paint Pro<br>
+          </div>
+          <div class="card__overviewtext">
+            個人制作<br>
+          </div>
+          <label class="open" for="pop-up0">→More</label>
+          <input type="checkbox" id="pop-up0">
+          <div class="overlay">
+	        <div class="window">
+		        <label class="close" for="pop-up0">×</label>
+		        <span class="pdf">
+              <iframe src="myfile/1F10200214_geminos.pdf"></iframe>
+            </span>
+            <div class="ex">
+              <a href="https://iniad-kitchen.com/kITchenGames/fes2021/">→プレイはこちらから</a>
+            </div>
+	        </div>
+          </div>
+        </div>
+      </div> 
+
+          <div class="card card-skin">
+      <div class="">
+        <img class="card__imgframe" src="myfile/teliza-.png">
+      </div>
+        <div class="card__textbox">
+          <div class="card__titletext">
+            INIAD mees web
+          </div>
+          <div class="card__overviewtext">
+            公認サークルオンライン新歓イベント配信サイト<br>
+            ティザーサイト・エントランスページ<br>広告デザイン担当<br>
+            Illustrator, Clip Studio Paint Pro<br>
+          </div>
+          <div class="card__overviewtext">
+            課外活動<br>
+            所属しているサークルの<br>オンライン新歓イベント運営にて制作
+          </div>
+          <label class="open" for="pop-up1">→More</label>
+          <input type="checkbox" id="pop-up1">
+          <div class="overlay">
+	        <div class="window">
+		        <label class="close" for="pop-up1">×</label>
+		        <span class="pdf">
+              <iframe src="myfile/meets_web.pdf"></iframe>
+            </span>
+            <div class="ex">
+              <a href="https://meets.iniad.net">→実ページ閲覧はこちらから</a>
+            </div>
+	        </div>
+          </div>
+        </div>
+      </div> 
+
+          <div class="card card-skin">
+      <div class="">
+        <img class="card__imgframe" src="myfile/200214_1b_final.pdf#1">
+      </div>
+        <div class="card__textbox">
+          <div class="card__titletext">
+            諏訪湖花火 おすすめ観覧スポット
+          </div>
+          <div class="card__overviewtext">
+            インフォグラフィクス<br>
+            Illustrator<br>
+          </div>
+          <div class="card__overviewtext">
+            授業課題<br>
+            「情報連携デザイン演習ⅠB」にて制作
+          </div>
+          <label class="open" for="pop-up2">→More</label>
+          <input type="checkbox" id="pop-up2">
+          <div class="overlay">
+	        <div class="window">
+		        <label class="close" for="pop-up2">×</label>
+		        <span class="pdf">
+              <iframe src="myfile/200214_1b_final.pdf"></iframe>
+            </span>
+	        </div>
+          </div>
+        </div>
+      </div> 
+
+    <div class="card card-skin">
+      <div class="">
+        <img class="card__imgframe" src="myfile/Yaho.png">
+      </div>
+        <div class="card__textbox">
+          <div class="card__titletext">
+            Live2Dモデル「浅葱弥帆」
+          </div>
+          <div class="card__overviewtext">
+            Clip Studio Paint Pro, Live2D Cubism Editor<br>
+          </div>
+          <div class="card__overviewtext">
+            自主制作
+          </div>
+          <label class="open" for="pop-up3">→More</label>
+          <input type="checkbox" id="pop-up3">
+          <div class="overlay">
+	        <div class="window">
+		        <label class="close" for="pop-up3">×</label>
+            <video class="v" controls>
+              <source src="myfile/Yahosample.mp4" type="video/mp4">
+            </video>
+            <div class="ex">サンプル映像</div>
+	        </div>
+          </div>
+        </div>
+      </div> 
+
+    <div class="card card-skin">
+      <div class="">
+        <img class="card__imgframe" src="myfile/1F10200214_light.pdf#1">
+      </div>
+        <div class="card__textbox">
+          <div class="card__titletext">
+            Watchanimal
+          </div>
+          <div class="card__overviewtext">
+            プロダクトデザイン<br>
+            Illustrator, Autodesk Fusion360<br>
+          </div>
+          <div class="card__overviewtext">
+            授業課題<br>
+            「情報連携デザイン演習ⅠB」にて制作
+          </div>
+          <label class="open" for="pop-up4">→More</label>
+          <input type="checkbox" id="pop-up4">
+          <div class="overlay">
+	        <div class="window">
+		        <label class="close" for="pop-up4">×</label>
+		        <span class="pdf">
+              <iframe src="myfile/1F10200214_light.pdf"></iframe>
+            </span>
+	        </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </div>
+  </div>
+</body>
+</html>
