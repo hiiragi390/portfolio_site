@@ -3,9 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <title>Getting Started</title>
+        <script src="https://s3-ap-northeast-1.amazonaws.com/cubism3.live2d.com/sdk/js_eap/live2dcubismcore.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </head>
     <body>
         <h1>test</h1>
-        <script src="main.js"></script>
+         <div id="top" class="container">
+        <div class="row">
+            <div id="live2d" v-on:click="live2d_clicked()" style="margin:0 auto;"> 
+        </div>
+        </div>
+        </div>
+        <script src="src/index.js"></script>
     </body>
 </html>
