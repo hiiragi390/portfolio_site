@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build:prod",
+			"path": "CubismSdkForWeb-4-r.4/Samples/TypeScript/Demo/",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build:prod - CubismSdkForWeb-4-r.4/Samples/TypeScript/Demo",
+			"detail": "webpack --mode production"
+		}
+	]
+}
