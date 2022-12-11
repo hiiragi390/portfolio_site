@@ -32,15 +32,13 @@ body{
     /*天地中央配置*/
     position: absolute;
     z-index: -1;
-    top: 50%;
     left: 50%;
-    transform: translate(-67%, -50%);
+    transform: translate(0, -50%);
     /*縦横幅指定
     width: 177.77777778vh;
     /* 16:9 の幅→16 ÷ 9＝ 177.77% 
     height: 56.25vw;
     /* 16:9の幅 → 9 ÷ 16 = 56.25% */
-    bottom: 0;
     min-height: 100vh;
     min-width: 100%;
 }
