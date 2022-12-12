@@ -2,7 +2,59 @@ body{
     font-family: 'Noto Sans JP',
     sans-serif;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
+
+.loading {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 113, 57);
+}
+
+.loading.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms;
+}
+
+.loading .circle {
+    display: block;
+    position: relative;
+    top: calc(50% - 150px);
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border: 32px solid #ffffff;
+    border-top: 28px solid #ffcccc;
+    border-radius: 200px;
+    animation: loading 700ms linear 0ms infinite normal both;
+}
+
+#loading_img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50px,-90px);
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 .for-footer{
     padding-bottom: 27%;

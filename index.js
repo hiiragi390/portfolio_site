@@ -177,3 +177,11 @@ $("#zone").on('touchstart', function(e){
     footer.classList.toggle("footer-down");
   }
 })
+
+
+
+const loading = document.querySelector( '.loading' );
+ 
+video.addEventListener( 'canplay', () => {
+  loading.classList.add( 'hide' );
+}, false );
