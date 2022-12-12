@@ -142,7 +142,6 @@ openButton7.addEventListener("click", {n:7, handleEvent:open});
 
 $(window).on('scroll', function(){
   var top_bottom = $(window).height();
-  console.log(top_bottom);
   if(top_bottom <992){
     if($(window).scrollTop() > 400){
     $("#footer").addClass("footer-fixed");

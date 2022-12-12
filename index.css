@@ -133,7 +133,7 @@ body{
     text-align: center;
     outline: medium 
     solid 
-    rgb(224, 63, 52);
+    rgb(255, 113, 57);
     outline-offset: 3px;
     z-index: -2;
 
@@ -233,41 +233,29 @@ body{
 
 /* CSS */
 .open-button {
-    font-size: 16px;
-    font-weight: 200;
-    letter-spacing: 1px;
-    padding: 13px 20px 13px;
-    outline: 0;
-    border: 2px solid rgb(255, 72, 0);
+    margin: 10px;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
     cursor: pointer;
+    transition: all 0.3s ease;
     position: relative;
-    background-color: rgba(0, 0, 0, 0);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    margin-top: 15px;
-    margin-bottom: 10px;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 113, 57);
+    background: rgb(255, 113, 57);
 }
 
-.open-button:after {
-    content: "";
-    background-color: #ff0000;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-    z-index: -1;
-    top: 7px;
-    left: 7px;
-    transition: 0.2s;
-}
-
-.open-button:hover:after {
-    top: 0px;
-    left: 0px;
+.open-button:hover{
+    background: #fff;
+    color: rgb(255, 113, 57);
 }
 
 .pop-title{
-    border-bottom:solid 2px rgb(255, 72, 0);
+    border-bottom:solid 2px rgb(255, 113, 57);
     margin-left: 17%;
     margin-right: 17%;
     margin-bottom: 10px;
@@ -301,7 +289,7 @@ iframe[src$=".pdf"] {
 }
 
 .pdf-btn {
-    background-color: rgb(255, 72, 0);
+    background-color: rgb(255, 113, 57);
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
