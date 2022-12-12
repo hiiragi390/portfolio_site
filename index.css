@@ -41,7 +41,7 @@ body{
     /* 16:9の幅 → 9 ÷ 16 = 56.25% */
     min-height: 100vh;
     min-width: 100%;
-    background-color: rgb(0, 0, 0,0);
+    /*background-color: rgb(0, 0, 0,0);*/
 }
 
 /*見出し設定*/
@@ -126,8 +126,10 @@ body{
     clear: both;
     background: rgba(255, 249, 230, 0.97);
     border-radius: 8px;
-    padding: 20px 0;
+    padding: 20px;
     margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
     text-align: center;
     outline: medium 
     solid 
@@ -249,11 +251,11 @@ body{
 
 .open-button:after {
     content: "";
-    background-color: #ffffff;
+    background-color: #ff0000;
     width: 100%;
-    z-index: -1;
     position: absolute;
     height: 100%;
+    z-index: -1;
     top: 7px;
     left: 7px;
     transition: 0.2s;
