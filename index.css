@@ -91,7 +91,7 @@ body{
     /* 16:9 の幅→16 ÷ 9＝ 177.77% 
     height: 56.25vw;
     /* 16:9の幅 → 9 ÷ 16 = 56.25% */
-    min-height: 100vh;
+    min-height: 100%;
     min-width: 100%;
     /*background-color: rgb(0, 0, 0,0);*/
 }
@@ -106,7 +106,7 @@ body{
     transform: translateY(-50%);
     /*見た目の調整*/
     color: rgb(255,255,255);
-    text-shadow: 0 0 5px rgba(53, 43, 43, 0.7);
+    text-shadow: 0 0 10px rgba(53, 43, 43, 0.7);
     font-size: 15vw;
     /*mix-blend-mode:screen;*/
     opacity: 100%;
@@ -131,6 +131,7 @@ body{
 }
 
 .page-title{
+    margin-left: 10px;
     float: left;
     color: rgb(255, 255, 255);
     text-shadow: 0 0 5px rgba(53, 43, 43, 0.9);
@@ -178,7 +179,7 @@ body{
     clear: both;
     background: rgba(255, 249, 230, 0.97);
     border-radius: 8px;
-    padding: 10px;
+    padding: 20px 10px;
     margin-bottom: 20px;
     margin-left: 5px;
     margin-right: 5px;
@@ -213,7 +214,7 @@ body{
 
 .head {
     display: flex;
-    padding-left: 20px;
+    padding:10px
 }
 
 .article_b{
@@ -413,7 +414,7 @@ iframe[src$=".pdf"] {
     margin-top: 1%;
     margin-bottom: 2%;
     padding: 0;
-    font-size: 15px;
+    font-size: 12px;
     color: rgb(255, 113, 57);
     text-shadow:1px 1px 0 #FFF,
     -1px -1px 0 #FFF,
