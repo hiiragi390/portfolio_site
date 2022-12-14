@@ -232,7 +232,9 @@ body{
     text-align: left;
 }
 
-.modal {
+
+
+/*.modal {
     display: block;
     width: 90%;
     max-width: 100%;
@@ -261,6 +263,24 @@ body{
     background: rgba(15, 6, 6, 0.6);
 }
 
+*/
+
+table{
+    display: flex;
+    width: 100vw;
+}
+
+td{
+    width: 60px;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+td img{
+    width: 40px;
+    height: auto;
+}
+
 .modal-guts {
     position: absolute;
     top: 0;
@@ -275,6 +295,7 @@ body{
     transform: translate(-50%, -50%);
 }
 
+/*
 .modal .close-button {
     position: absolute;
     z-index: 1;
@@ -389,6 +410,8 @@ iframe[src$=".pdf"] {
 .hold-back{
     overflow: hidden;
 }
+
+*/
 
 .footer-inline{
     display: flex;
