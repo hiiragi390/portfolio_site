@@ -223,8 +223,7 @@ body{
 }
 
 .article_b{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin: 10px 15px;
 }
 
 .article_b p{
@@ -270,13 +269,20 @@ table{
 }
 
 td{
+    vertical-align: middle;
     width: 60px;
     padding: 0;
     border-collapse: collapse;
 }
 
 td img{
-    width: 50px;
+    width: 30px;
+    height: auto;
+    margin: 0 7px;
+}
+
+.skill_pick{
+    width: 55px;
     height: auto;
 }
 
