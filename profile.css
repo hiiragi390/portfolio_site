@@ -1,0 +1,723 @@
+body{
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: rgb(19, 7, 3);
+}
+
+.loading {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgb(255, 113, 57);
+}
+
+.loading.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms;
+}
+
+.loading .circle {
+    display: block;
+    position: relative;
+    top: calc(50% - 150px);
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    border: 32px solid #ffffff;
+    border-top: 28px solid #ffcccc;
+    border-radius: 200px;
+    animation: loading 700ms linear 0ms infinite normal both;
+}
+
+#loading_img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50px,-90px);
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.for-footer{
+    padding-bottom: 27%;
+}
+
+#header {
+    position: relative;
+    /*h1の中央寄せ配置の起点とするためのrelative*/
+    height: 100vh;
+    /*高さを全画面にあわせる*/
+}
+
+#video-area {
+    position: fixed;
+    z-index: -10;
+    /*最背面に設定*/
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#video {
+    padding: 0;
+    margin: 0;
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-64%, 0);
+    /*縦横幅指定
+    width: 177.77777778vh;
+    /* 16:9 の幅→16 ÷ 9＝ 177.77% 
+    height: 56.25vw;
+    /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+    /*background-color: rgb(0, 0, 0,0);*/
+}
+
+/*見出し設定*/
+.top {
+    /*要素の配置*/
+    position: absolute;
+    /*要素を天地中央寄せ*/
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    /*見た目の調整*/
+    color: rgb(255,255,255);
+    text-shadow: 0 0 10px rgba(53, 43, 43, 0.7);
+    font-size: 15vw;
+    /*mix-blend-mode:screen;*/
+    opacity: 100%;
+
+    
+    /*text-size-adjust: ;*/
+}
+
+#h1-1{
+    color: rgb(30, 224, 166);
+    /*text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);*/
+}
+
+#h1-2{
+    color: rgb(255, 218, 52);
+    /*text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);*/
+}
+/*========= レイアウトのためのCSS ===============*/
+
+.page-top{
+    display: block;
+}
+
+.page-title{
+    margin-left: 10px;
+    float: left;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgba(53, 43, 43, 0.9);
+}
+
+/*
+没ハンバーガー
+#menu{
+    float: right;
+    text-align: right;
+    display: block;
+    margin-right: 3%;
+    margin-top: 2.5%;
+    margin-left: auto;
+}
+
+#menu a{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:#942D2F;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:0.6rem;
+    margin-top: 8%;
+    right: 5%;
+}
+
+#menu.m_fixed a{
+    position: fixed;
+    top:2%;
+    right: 5%;
+    margin-top:0;
+}
+
+*/
+
+
+.container {
+    clear: both;
+    background: rgba(255, 249, 230, 0.97);
+    border-radius: 8px;
+    padding:10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    outline: 2px 
+    solid 
+    rgb(255, 113, 57);
+    outline-offset: 2px;
+    z-index: -2;
+
+}
+
+.article_c {
+    margin: 5px;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.head-lead{
+    text-align: left;
+    margin-left: 5px;
+}
+
+.head-lead h2,p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.head p{
+    font-size: 14px;
+}
+
+.head {
+    display: flex;
+    padding:10px
+}
+
+.article_b{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.article_b p{
+    margin-top: 10px;
+    text-align: left;
+}
+
+.modal {
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    height: 600px;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+
+.closed {
+    display: none;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: rgba(15, 6, 6, 0.6);
+}
+
+.modal-guts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 82%;
+    overflow: auto;
+    /*padding: 20px 50px 20px 20px;*/
+    padding-left: 25%;
+    padding-right: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal .close-button {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 20px;
+    border: 0;
+    background: rgb(15, 6, 6);
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 1.3rem;
+    border-radius: 100%;
+}
+
+
+.open-button {
+    font-family: 'Noto Sans JP',
+    sans-serif;
+    margin: 10px;
+    margin-top: 15px;
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 113, 57);
+    background: rgb(255, 113, 57);
+}
+
+.open-button:hover{
+    background: #fff;
+    color: rgb(255, 113, 57);
+}
+
+.pop-title{
+    border-bottom:solid 2px rgb(255, 113, 57);
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-bottom: 10px;
+}
+
+.pop-body{
+    margin-top: 10px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+iframe[src$=".pdf"] {
+    width: 85%;
+    height: 50%;
+
+}
+
+.pop-body-c{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pop-video{
+    width: 85%;
+    height: auto;
+}
+
+.pdf-btn {
+    background-color: rgb(255, 113, 57);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.pdf-btn:hover,
+.pdf-btn:focus {
+    background-color: rgb(255, 113, 57);
+}
+
+.pdf-btn a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family:
+    sans-serif;
+    border: none;
+}
+
+.hold-back{
+    overflow: hidden;
+}
+
+.footer-inline{
+    display: flex;
+    z-index: 90;
+    justify-content: center;
+}
+
+.footer-inline a{
+    display: block;
+    margin: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius :30px;
+    border: solid 2px rgb(255, 113, 57);
+    text-decoration: none;
+    width: 28%;
+}
+
+.footer-inline a div img {
+    width: 40%;
+    height: auto;
+}
+
+.footer-inline a div h3{
+    margin-top: 1%;
+    margin-bottom: 2%;
+    padding: 0;
+    font-size: 12px;
+    color: rgb(255, 113, 57);
+    text-shadow:1px 1px 0 #FFF,
+    -1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px -1px 0 #FFF,
+    0px 1px 0 #FFF,
+    0-1px 0 #FFF,
+    -1px 0 0 #FFF,
+    1px 0 0 #FFF;
+}
+
+.footer-fixed{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    animation-name:zoomOutAnime;
+    animation-duration:0.2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes zoomOutAnime {
+    from {
+        transform: scale(1.2);
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+    .open-button {
+        padding: 13px 50px 13px;
+    }
+}
+
+/*以下タブレット用*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #video {
+        /*天地中央配置*/
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-58%, -50%);
+        /*縦横幅指定*/
+        width: 177.77777778vh;
+        /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+        height: 56.25vw;
+        /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+    .page-title {
+        margin-left: 3%;
+        font-size: 40px;
+    }
+
+    .container {
+        border-radius: 15px;
+        margin-left: 3%;
+        margin-right: 27%;
+    }
+
+    .modal{
+        height: 800px;
+        border-radius: 30px;
+    }
+
+    .modal .close-button {
+        font-size: 2.4rem;
+        padding: 6px 16px;
+        top: 20px;
+        right: 30px;
+    }
+
+    .pop-title {
+        margin-top: 0;
+    }
+
+    .pop-body {
+        margin-top: 10px;
+        height: 680px;
+        overflow-y: scroll;
+    }
+
+    .pop-body p{
+        font-size: 20px;
+    }
+
+    .footer-inline {
+        display: block;
+        width: 60%;
+        height: auto;
+        margin-left: 37%;
+        margin-top: 10%;
+    }
+
+    .footer-inline a {
+        margin: 10px;
+        margin-top: 30%;
+    }
+
+    .footer-fixed {
+        position: fixed;
+        top: 0px;
+        bottom: unset;
+        right: 0px;
+        left: unset;
+        z-index: 10;
+        animation-name: zoomOutAnime;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    button.pop-body-c {
+        height: auto;
+        text-size-adjust: auto;
+        padding-top:15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .zone{
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        z-index: 50;
+        padding-left: 27%;
+        padding-top: 70%;
+    }
+
+
+    .footer-down {
+        position: fixed;
+        top: 400px;
+        bottom: unset;
+        right: 0px;
+        left: unset;
+        z-index: 10;
+        animation-name: downAnime;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+    @keyframes downAnime {
+        from {
+            transform: scale(1.2);
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (min-width: 768px) {
+        .open-button {
+            padding: 13px 50px 13px;
+        }
+    }
+}
+
+/*以下PC複タブ用*/
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #video {
+        /*天地中央配置*/
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        /*縦横幅指定*/
+        width: 177.77777778vh;
+        /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+        height: 56.25vw;
+        /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+    .top{
+        font-size: 12vw;
+    }
+
+    h1 {        
+        text-shadow: 0 0 7px rgb(61, 45, 45);
+        /*text-size-adjust: ;*/
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .page-title {
+        margin-left: 5%;
+        font-size: 50px;
+    }
+
+    .container {
+        border-radius: 20px;
+        margin-left: 30%;
+        margin-right: 5%;
+    }
+
+    .modal {
+        height: 800px;
+        border-radius: 30px;
+    }
+
+    .modal .close-button {
+        font-size: 2.4rem;
+        padding: 6px 16px;
+        top: 20px;
+        right: 30px;
+    }
+
+    .pop-title {
+        margin-top: 0;
+    }
+
+    .pop-body {
+        margin-top: 10px;
+        height: 680px;
+        overflow-y: scroll;
+    }
+
+    .pop-body p {
+        font-size: 20px;
+    }
+
+
+
+
+    .footer-inline {
+        display: block;
+        width: 70%;
+        height: auto;
+        /*margin-left: 37%;
+        margin-top: 10%;*/
+    }
+    
+    .footer-inline a {
+        margin: 10px;
+        margin-top: 30%;
+    }
+
+    .footer-fixed {
+        position: fixed;
+        top: 0px;
+        bottom: unset;
+        right: unset;
+        left: 5%;
+        z-index: 10;
+        animation-name: zoomOutAnime;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
+
+}
+
+/*以下PCフル用*/
+@media screen and (min-width: 1200px) {
+    #video {
+        /*天地中央配置*/
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*縦横幅指定*/
+        width: 177.77777778vh;
+        /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+        height: 56.25vw;
+        /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+        min-height: 100%;
+        min-width: 100%;
+    }
+
+    h1 {
+        text-shadow: 0 0 9px rgb(61, 45, 45);
+        /*text-size-adjust: ;*/
+    }
+}
