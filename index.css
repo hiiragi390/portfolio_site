@@ -4,6 +4,7 @@ body{
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    color: rgb(19, 7, 3);
 }
 
 .loading {
@@ -179,15 +180,15 @@ body{
     clear: both;
     background: rgba(255, 249, 230, 0.97);
     border-radius: 8px;
-    padding: 20px 10px;
+    padding:10px;
     margin-bottom: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: center;
-    outline: medium 
+    outline: 2px 
     solid 
     rgb(255, 113, 57);
-    outline-offset: 3px;
+    outline-offset: 2px;
     z-index: -2;
 
 }
@@ -210,6 +211,10 @@ body{
 .head-lead h2,p{
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.head p{
+    font-size: 14px;
 }
 
 .head {
@@ -278,19 +283,24 @@ body{
     border: 0;
     background: rgb(15, 6, 6);
     color: white;
-    padding: 10px 15px;
+    width: 40px;
+    height: 40px;
     margin-top: 5px;
     font-size: 1.3rem;
     border-radius: 100%;
 }
 
-/* CSS */
+
 .open-button {
+    font-family: 'Noto Sans JP',
+    sans-serif;
     margin: 10px;
+    margin-top: 15px;
     min-width: 130px;
     height: 40px;
     color: #fff;
     padding: 5px 10px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -327,11 +337,6 @@ iframe[src$=".pdf"] {
 }
 
 .pop-body-c{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.pop-body p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
