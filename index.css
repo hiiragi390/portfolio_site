@@ -198,14 +198,14 @@ body{
 }
 
 .icon{
-    width: 70px;
-    height: 70px;
-    object-fit: cover;
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 .head-lead{
     text-align: left;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .head-lead h2,p{
@@ -218,8 +218,7 @@ body{
 }
 
 .head {
-    display: flex;
-    padding:10px
+    margin: 10px 15px;
 }
 
 .article_b{
@@ -228,7 +227,7 @@ body{
 }
 
 .article_b p{
-    margin-top: 10px;
+    margin: 10px 0;
     text-align: left;
 }
 
@@ -341,8 +340,8 @@ iframe[src$=".pdf"] {
     margin-bottom: 10px;
 }
 
-.pop-video{
-    width: 85%;
+.pop-media{
+    width: 90%;
     height: auto;
 }
 
@@ -360,7 +359,7 @@ iframe[src$=".pdf"] {
     height: 40px;
     line-height: 20px;
     list-style: none;
-    margin: 0;
+    margin-top: 15px;
     outline: none;
     padding: 10px 16px;
     position: relative;

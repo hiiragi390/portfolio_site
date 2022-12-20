@@ -265,25 +265,46 @@ body{
 */
 
 table{
+    table-layout: fixed;
+    display: inline-block;
+    width:100%;
+}
+
+tr{
     display: flex;
 }
 
 td{
     vertical-align: middle;
-    width: 60px;
-    padding: 0;
     border-collapse: collapse;
+}
+
+.skill_name{
+    height: 56px;
+    text-align: center;
+    width: 90px;
+    padding: 16px 10px;
+    font-size: 16px;
+}
+
+
+.skill{
+    width: 5%;
+    margin: 0;
+    align-items: center;
 }
 
 td img{
     width: 30px;
     height: auto;
-    margin: 0 7px;
+    margin: 13px 10px;
+
 }
 
 .skill_pick{
-    width: 55px;
+    width: 56px;
     height: auto;
+    margin: 0 10px;
 }
 
 .modal-guts {
