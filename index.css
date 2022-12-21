@@ -10,7 +10,7 @@ body{
 .loading {
     position: fixed;
     z-index: 1000;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -71,6 +71,8 @@ body{
 #video-area {
     position: fixed;
     z-index: -10;
+    height: 100vh;
+    width: 100vw;
     /*最背面に設定*/
     top: 0;
     right: 0;
@@ -235,7 +237,7 @@ body{
     display: block;
     width: 90%;
     max-width: 100%;
-    height: 600px;
+    height: 90%;
     position: fixed;
     z-index: 100;
     left: 50%;
@@ -264,7 +266,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 82%;
+    width: 95%;
     overflow: auto;
     /*padding: 20px 50px 20px 20px;*/
     padding-left: 25%;
@@ -326,6 +328,7 @@ body{
 .pop-body{
     margin-top: 10px;
     height: 500px;
+    padding: 0 5%;
     overflow-y: scroll;
 }
 
@@ -425,7 +428,7 @@ iframe[src$=".pdf"] {
     -1px 1px 0 #FFF,
     1px -1px 0 #FFF,
     0px 1px 0 #FFF,
-    0-1px 0 #FFF,
+    0 -1px 0 #FFF,
     -1px 0 0 #FFF,
     1px 0 0 #FFF;
 }
@@ -464,18 +467,32 @@ iframe[src$=".pdf"] {
 
 /*以下タブレット用*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    #header {
+        position: relative;
+        /*h1の中央寄せ配置の起点とするためのrelative*/
+        height: 100vh;
+        /*高さを全画面にあわせる*/
+    }
+
+    #video-area {
+        position: fixed;
+        z-index: -10;
+        /*最背面に設定*/
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
     #video {
+        padding: 0;
+        margin: 0;
         /*天地中央配置*/
         position: absolute;
         z-index: -1;
-        top: 50%;
         left: 50%;
-        transform: translate(-58%, -50%);
-        /*縦横幅指定*/
-        width: 177.77777778vh;
-        /* 16:9 の幅→16 ÷ 9＝ 177.77% */
-        height: 56.25vw;
-        /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+        transform: translate(-64%, 0);
         min-height: 100%;
         min-width: 100%;
     }
@@ -492,7 +509,7 @@ iframe[src$=".pdf"] {
     }
 
     .modal{
-        height: 800px;
+        height: 600px;
         border-radius: 30px;
     }
 
@@ -508,8 +525,7 @@ iframe[src$=".pdf"] {
     }
 
     .pop-body {
-        margin-top: 10px;
-        height: 680px;
+        padding: 0 5%;
         overflow-y: scroll;
     }
 
@@ -519,15 +535,16 @@ iframe[src$=".pdf"] {
 
     .footer-inline {
         display: block;
-        width: 60%;
+        width: 120%;
         height: auto;
-        margin-left: 37%;
+        margin-left: 45%;
         margin-top: 10%;
     }
 
     .footer-inline a {
         margin: 10px;
         margin-top: 30%;
+        display: block;
     }
 
     .footer-fixed {
@@ -591,6 +608,10 @@ iframe[src$=".pdf"] {
         }
     }
 
+    .for-footer {
+        padding-bottom: 0;
+    }
+
     @media (min-width: 768px) {
         .open-button {
             padding: 13px 50px 13px;
@@ -646,8 +667,9 @@ iframe[src$=".pdf"] {
     }
 
     .modal .close-button {
-        font-size: 2.4rem;
-        padding: 6px 16px;
+        font-size: 3.6rem;
+        width: 65px;
+        height: 65px;
         top: 20px;
         right: 30px;
     }
@@ -680,6 +702,9 @@ iframe[src$=".pdf"] {
     .footer-inline a {
         margin: 10px;
         margin-top: 30%;
+        width: 70%;
+        height: auto;
+        display: block;
     }
 
     .footer-fixed {
@@ -718,5 +743,82 @@ iframe[src$=".pdf"] {
     h1 {
         text-shadow: 0 0 9px rgb(61, 45, 45);
         /*text-size-adjust: ;*/
+    }
+
+    .top {
+        font-size: 12vw;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .page-title {
+        margin-left: 5%;
+        font-size: 50px;
+    }
+
+    .container {
+        border-radius: 20px;
+        margin-left: 30%;
+        margin-right: 5%;
+    }
+
+    .modal {
+        height: 800px;
+        border-radius: 30px;
+    }
+
+    .modal .close-button {
+        font-size: 3.6rem;
+        width: 65px;
+        height: 65px;
+        top: 20px;
+        right: 30px;
+    }
+
+    .pop-title {
+        margin-top: 0;
+    }
+
+    .pop-body {
+        margin-top: 10px;
+        height: 680px;
+        overflow-y: scroll;
+    }
+
+    .pop-body p {
+        font-size: 20px;
+    }
+
+
+
+
+    .footer-inline {
+        display: block;
+        width: 100%;
+        height: auto;
+        /*margin-left: 37%;
+        margin-top: 10%;*/
+    }
+
+    .footer-inline a {
+        margin: 10px;
+        margin-top: 30%;
+        width: 200px;
+        height: auto;
+    }
+
+    .footer-fixed {
+        position: fixed;
+        top: 0px;
+        bottom: unset;
+        right: unset;
+        left: 5%;
+        z-index: 10;
+        animation-name: zoomOutAnime;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
 }
