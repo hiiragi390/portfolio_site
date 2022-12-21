@@ -515,7 +515,8 @@ iframe[src$=".pdf"] {
 
     .modal .close-button {
         font-size: 2.4rem;
-        padding: 6px 16px;
+        width: 45px;
+        height: 45px;
         top: 20px;
         right: 30px;
     }
