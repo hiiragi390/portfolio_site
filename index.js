@@ -93,9 +93,9 @@ closeButton1.addEventListener("click", {n:1, handleEvent:close});
 closeButton2.addEventListener("click", {n:2, handleEvent:close});
 closeButton3.addEventListener("click", {n:3, handleEvent:close});
 closeButton4.addEventListener("click", {n:4, handleEvent:close});
-closeButton5.addEventListener("click", {n:5, handleEvent:close});
+//closeButton5.addEventListener("click", {n:5, handleEvent:close});
 closeButton6.addEventListener("click", {n:6, handleEvent:close});
-closeButton7.addEventListener("click", {n:7, handleEvent:close});
+//closeButton7.addEventListener("click", {n:7, handleEvent:close});
 
 function open(n){
   body.classList.toggle("hold-back");
@@ -134,9 +134,9 @@ openButton1.addEventListener("click", {n:1, handleEvent:open});
 openButton2.addEventListener("click", {n:2, handleEvent:open});
 openButton3.addEventListener("click", {n:3, handleEvent:open});
 openButton4.addEventListener("click", {n:4, handleEvent:open});
-openButton5.addEventListener("click", {n:5, handleEvent:open});
+//openButton5.addEventListener("click", {n:5, handleEvent:open});
 openButton6.addEventListener("click", {n:6, handleEvent:open});
-openButton7.addEventListener("click", {n:7, handleEvent:open});
+//openButton7.addEventListener("click", {n:7, handleEvent:open});
 
 
 
