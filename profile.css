@@ -294,17 +294,26 @@ td{
     align-items: center;
 }
 
+.article_b table{
+    margin: auto;
+}
+
 td img{
     width: 30px;
     height: auto;
-    margin: 13px 10px;
+    margin: 13px 7px;
 
+}
+
+.td_skill{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .skill_pick{
     width: 56px;
     height: auto;
-    margin: 0 10px;
+    margin: 0 7px;
 }
 
 .modal-guts {
