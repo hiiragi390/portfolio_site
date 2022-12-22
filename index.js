@@ -68,33 +68,33 @@ function close(n) {
       open_modalOverlay.classList.toggle("open-overlay");
   }
   if(this.n==1){
-    modal1.classList.toggle("closed");
-    modalOverlay1.classList.toggle("closed");
+    modal1.classList.toggle("closed","open");
+    modalOverlay1.classList.toggle("closed","open-overlay");
   }
   else if(this.n==2){
-    modal2.classList.toggle("closed");
-    modalOverlay2.classList.toggle("closed");
+    modal2.classList.toggle("closed","open");
+    modalOverlay2.classList.toggle("closed","open-overlay");
   }
   else if(this.n==3){
-    modal3.classList.toggle("closed");
-    modalOverlay3.classList.toggle("closed");
+    modal3.classList.toggle("closed","open");
+    modalOverlay3.classList.toggle("closed","open-overlay");
   }
   else if(this.n==4){
 
-    modal4.classList.toggle("closed");
-    modalOverlay4.classList.toggle("closed");
+    modal4.classList.toggle("closed","open");
+    modalOverlay4.classList.toggle("closed","open-overlay");
   }
   else if(this.n==5){
-    modal5.classList.toggle("closed");
-    modalOverlay5.classList.toggle("closed");
+    modal5.classList.toggle("closed","open");
+    modalOverlay5.classList.toggle("closed","open-overlay");
   }
   else if(this.n==6){
-    modal6.classList.toggle("closed");
-    modalOverlay6.classList.toggle("closed");
+    modal6.classList.toggle("closed","open");
+    modalOverlay6.classList.toggle("closed","open-overlay");
   }
   else if(this.n==7){
-    modal7.classList.toggle("closed");
-    modalOverlay7.classList.toggle("closed");
+    modal7.classList.toggle("closed","open");
+    modalOverlay7.classList.toggle("closed","open-overlay");
   }
   body.classList.toggle("hold-back");
 };
