@@ -284,30 +284,12 @@ td{
 }
 
 .skill_name{
-    display: grid;
-    align-items: center;
     height: 56px;
     text-align: left;
     width: 90px;
     padding: 16px 10px;
     font-size: 16px;
     top: 0;
-}
-
-.skill_name_l{
-    height: 56px;
-    text-align: left;
-    width: 90px;
-    padding: 16px 10px;
-    font-size: 14px;
-    top: 0;
-}
-
-
-.skill{
-    width: 5%;
-    margin: 0;
-    align-items: center;
 }
 
 .article_b table{
@@ -319,11 +301,6 @@ td img{
     height: auto;
     margin: 0 8px;
 
-}
-
-.td_skill{
-    display: flex;
-    justify-content: flex-end;
 }
 
 .skill_pick{
@@ -597,29 +574,22 @@ iframe[src$=".pdf"] {
     .skill_name {
         height: 56px;
         text-align: left;
-        width: 150px;
-        padding: 24px 10px;
-        font-size: 20px;
-    }
-
-
-    .skill {
-        width: 7%;
-        margin: 0;
-        align-items: center;
+        width: 180px;
+        padding: 16px 10px;
+        font-size: 22px;
+        top: 0;
     }
 
     td img {
-        width: 50px;
+        width: 25px;
         height: auto;
-        margin: 15px 12px;
+        margin: 0 18px;
 
     }
 
     .skill_pick {
-        width: 82px;
+        width: 68px;
         height: auto;
-        margin: 0 10px;
     }
 
     .footer-inline {
@@ -776,6 +746,26 @@ iframe[src$=".pdf"] {
         font-size: 20px;
     }
 
+    .skill_name {
+        height: 56px;
+        text-align: left;
+        width: 240px;
+        padding: 16px 10px;
+        font-size: 22px;
+        top: 0;
+    }
+
+    td img {
+        width: 32px;
+        height: auto;
+        margin: 0 24px;
+
+    }
+
+    .skill_pick {
+        width: 75px;
+        height: auto;
+    }
 
 
 

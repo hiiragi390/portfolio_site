@@ -28,7 +28,7 @@ window.onload = playLoop();
 
 $(window).on('scroll', function(){
   var top_bottom = $(window).height();
-  if(top_bottom <992){
+  if(top_bottom <800){
     if($(window).scrollTop() > 400){
     $("#footer").addClass("footer-fixed");
     $("#zone").addClass("zone");
@@ -38,7 +38,7 @@ $(window).on('scroll', function(){
     $("#zone").removeClass("zone");
   }
   }else{
-    let turn = top_bottom + 300;
+    let turn = top_bottom + 100;
     if($(window).scrollTop() > turn){
       $("#footer").addClass("footer-fixed");
       $("#zone").addClass("zone");
