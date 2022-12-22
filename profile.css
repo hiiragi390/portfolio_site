@@ -272,19 +272,35 @@ table{
 
 tr{
     display: flex;
+
 }
 
 td{
     vertical-align: middle;
     border-collapse: collapse;
+    display: grid;
+    align-items: center;
+
 }
 
 .skill_name{
+    display: grid;
+    align-items: center;
     height: 56px;
     text-align: left;
     width: 90px;
     padding: 16px 10px;
     font-size: 16px;
+    top: 0;
+}
+
+.skill_name_l{
+    height: 56px;
+    text-align: left;
+    width: 90px;
+    padding: 16px 10px;
+    font-size: 14px;
+    top: 0;
 }
 
 
@@ -301,7 +317,7 @@ td{
 td img{
     width: 20px;
     height: auto;
-    margin: 12px 8px;
+    margin: 18px 8px;
 
 }
 
