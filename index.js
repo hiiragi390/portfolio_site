@@ -201,6 +201,7 @@ openButton6.addEventListener("click", {n:6, handleEvent:open});
 
 
 var top_bottom = $(window).height();
+console.log(top_bottom);
 $(window).on('scroll', function(){
   if(top_bottom <800){
     if($(window).scrollTop() > 400){
@@ -220,7 +221,7 @@ $(window).on('scroll', function(){
     $("#zone").removeClass("zone");
   }
   }else{
-    let turn = top_bottom + 50;
+    let turn = top_bottom + 400;
     if($(window).scrollTop() > turn){
       $("#footer").addClass("footer-fixed");
       $("#zone").addClass("zone");

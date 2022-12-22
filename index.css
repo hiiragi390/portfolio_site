@@ -460,12 +460,6 @@ iframe[src$=".pdf"] {
     }
 }
 
-@media (min-width: 768px) {
-    .open-button {
-        padding: 13px 50px 13px;
-    }
-}
-
 /*以下タブレット用*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #header {
@@ -612,12 +606,6 @@ iframe[src$=".pdf"] {
 
     .for-footer {
         padding-bottom: 0;
-    }
-
-    @media (min-width: 768px) {
-        .open-button {
-            padding: 13px 50px 13px;
-        }
     }
 
 
