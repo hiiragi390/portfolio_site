@@ -59,6 +59,14 @@ window.onload = playLoop();
 
 
 function close(n) {
+  let open_modal = document.querySelector(".open");
+  let open_modalOverlay = document.querySelector(".open-overlay");
+  if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+  }
   if(this.n==1){
     modal1.classList.toggle("closed");
     modalOverlay1.classList.toggle("closed");
