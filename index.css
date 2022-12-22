@@ -638,10 +638,6 @@ iframe[src$=".pdf"] {
         /*text-size-adjust: ;*/
     }
 
-    p{
-        font-size: 20px;
-    }
-
     .page-title {
         margin-left: 5%;
         font-size: 50px;
@@ -649,13 +645,26 @@ iframe[src$=".pdf"] {
 
     .container {
         border-radius: 20px;
-        margin-left: 10%;
-        margin-right: 5%;
+        margin-left: 200px;
+        margin-right: 50%;
+        z-index: 20;
+    }
+
+    .hold-back {
+        overflow: auto;
     }
 
     .modal {
-        height: 800px;
-        border-radius: 30px;
+         position: fixed;
+         z-index: 100;
+         left: 53%;
+         top: 50%;
+         transform: translate(0, -50%);
+         margin-right: 0;
+         height: 90vh;
+         border-radius: 30px;
+         width: 45vw;
+         box-shadow: none;
     }
 
     .modal .close-button {
@@ -664,6 +673,12 @@ iframe[src$=".pdf"] {
         height: 65px;
         top: 20px;
         right: 30px;
+    }
+
+    .modal-overlay {
+
+        z-index: -100;
+        background: rgba(0, 0, 0, 0);
     }
 
     .pop-title {
@@ -683,18 +698,17 @@ iframe[src$=".pdf"] {
 
     .footer-inline {
         display: block;
-        width: 70%;
+        width: 100%;
         height: auto;
         /*margin-left: 37%;
         margin-top: 10%;*/
     }
-    
+
     .footer-inline a {
         margin: 10px;
         margin-top: 30%;
-        width: 70%;
+        width: 110px;
         height: auto;
-        display: block;
     }
 
     .footer-fixed {
@@ -702,7 +716,7 @@ iframe[src$=".pdf"] {
         top: 0px;
         bottom: unset;
         right: unset;
-        left: 2%;
+        left: 15px;
         z-index: 10;
         animation-name: zoomOutAnime;
         animation-duration: 0.2s;
@@ -711,7 +725,7 @@ iframe[src$=".pdf"] {
     }
 
     .footer-inline a div h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 }
@@ -743,9 +757,6 @@ iframe[src$=".pdf"] {
         font-size: 12vw;
     }
 
-    p {
-        font-size: 20px;
-    }
 
     .page-title {
         margin-left: 5%;
