@@ -270,8 +270,8 @@ body{
     height: 100%;
     overflow: auto;
     /*padding: 20px 50px 20px 20px;*/
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-left: 30%;
+    padding-right: 30%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -649,6 +649,7 @@ iframe[src$=".pdf"] {
         margin-right: 50%;
         z-index: 20;
     }
+    
 
     .hold-back {
         overflow: auto;
@@ -774,6 +775,13 @@ iframe[src$=".pdf"] {
         z-index: 20;
     }
 
+    .container_normal {
+        border-radius: 20px;
+        margin-left: 300px;
+        margin-right: 15%;
+        z-index: 0;
+    }
+
     .hold-back {
         overflow: auto;
     }
@@ -802,7 +810,6 @@ iframe[src$=".pdf"] {
     }
 
 
-
     .modal-overlay {
 
         z-index: -100;
@@ -814,8 +821,8 @@ iframe[src$=".pdf"] {
     }
 
     .pop-body {
-        margin-top: 10px;
-        height: 680px;
+        margin-top: 8%;
+        height: 550px;
         overflow-y: scroll;
     }
 

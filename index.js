@@ -2,6 +2,8 @@
 var video = document.getElementById("video");
 var body = document.querySelector("body");
 var duration = video.duration;
+var top_bottom = $(window).height();
+var width = $(window).width();
 
 let cnt = 0;
 let zone = document.getElementById("zone");
@@ -46,8 +48,9 @@ var modal7 = document.getElementById("modal-7");
 var modalOverlay7 = document.getElementById("modal-overlay-7");
 
 
-function playLoop(){
+function tab_open(){
     var interval = setInterval(loop,36000)
+    container();
 }
 
 function loop(){
@@ -55,8 +58,24 @@ function loop(){
     video.currentTime = 0;
 }
 
-window.onload = playLoop();
+function container(){
+  if(width<=768){
+    const container = document.getElementsByClassName("container");
+    for(let i = 0;i<container.length;i++){
+      container[i].classList.remove("container_normal");
+    }
+  }
+}
 
+function toggle_container(){
+  const container = document.getElementsByClassName("container");
+    for(let i = 0;i<container.length;i++){
+      container[i].classList.toggle("container_normal");
+    }
+}
+
+
+window.onload = tab_open();
 
 function close(n) {
   let open_modal = document.querySelector(".open");
@@ -97,6 +116,7 @@ function close(n) {
     modalOverlay7.classList.toggle("closed","open-overlay");
   }
   body.classList.toggle("hold-back");
+  toggle_container();
 };
 
 //閉じるボタン
@@ -118,6 +138,8 @@ function open(n){
       open_modalOverlay.classList.toggle("closed");
       open_modal.classList.toggle("open");
       open_modalOverlay.classList.toggle("open-overlay");
+    }else{
+      toggle_container();
     }
     modal1.classList.toggle("closed");
     modalOverlay1.classList.toggle("closed");
@@ -130,6 +152,8 @@ function open(n){
       open_modalOverlay.classList.toggle("closed");
       open_modal.classList.toggle("open");
       open_modalOverlay.classList.toggle("open-overlay");
+    }else{
+      toggle_container();
     }
     modal2.classList.toggle("closed");
     modalOverlay2.classList.toggle("closed");
@@ -142,6 +166,8 @@ function open(n){
       open_modalOverlay.classList.toggle("closed");
       open_modal.classList.toggle("open");
       open_modalOverlay.classList.toggle("open-overlay");
+    }else{
+      toggle_container();
     }
     modal3.classList.toggle("closed");
     modalOverlay3.classList.toggle("closed");
@@ -154,6 +180,8 @@ function open(n){
       open_modalOverlay.classList.toggle("closed");
       open_modal.classList.toggle("open");
       open_modalOverlay.classList.toggle("open-overlay");
+    }else{
+      toggle_container();
     }
     modal4.classList.toggle("closed");
     modalOverlay4.classList.toggle("closed");
@@ -166,6 +194,8 @@ function open(n){
       open_modalOverlay.classList.toggle("open-overlay");
       open_modal.classList.toggle("closed");
       open_modalOverlay.classList.toggle("closed");
+    }else{
+      toggle_container();
     }
     modal5.classList.toggle("closed");
     modalOverlay5.classList.toggle("closed");
@@ -178,6 +208,8 @@ function open(n){
       open_modalOverlay.classList.toggle("closed");
       open_modal.classList.toggle("open");
       open_modalOverlay.classList.toggle("open-overlay");
+    }else{
+      toggle_container();
     }
     modal6.classList.toggle("closed");
     modalOverlay6.classList.toggle("closed");
@@ -190,6 +222,8 @@ function open(n){
       open_modalOverlay.classList.toggle("closed");
       open_modal.classList.toggle("open");
       open_modalOverlay.classList.toggle("open-overlay");
+    }else{
+      toggle_container();
     }
     modal7.classList.toggle("closed");
     modalOverlay7.classList.toggle("closed");
@@ -207,8 +241,6 @@ openButton4.addEventListener("click", {n:4, handleEvent:open});
 openButton6.addEventListener("click", {n:6, handleEvent:open});
 //openButton7.addEventListener("click", {n:7, handleEvent:open});
 
-
-var top_bottom = $(window).height();
 console.log(top_bottom);
 $(window).on('scroll', function(){
   if(top_bottom <800){
@@ -223,6 +255,12 @@ $(window).on('scroll', function(){
       open_modalOverlay.classList.toggle("closed");
       open_modal.classList.toggle("open");
       open_modalOverlay.classList.toggle("open-overlay");
+      if(width>768){
+        let container = document.getElementsByClassName("container");
+        for(let i = 0;i<container.length;i++){
+        container[i].classList.add("container_normal");
+      }
+      }
     }
     $("#footer").removeClass("footer-fixed");
     $("#footer").removeClass("footer-down");
@@ -241,13 +279,20 @@ $(window).on('scroll', function(){
       open_modalOverlay.classList.toggle("closed");
       open_modal.classList.toggle("open");
       open_modalOverlay.classList.toggle("open-overlay");
+      if(width>768){
+        let container = document.getElementsByClassName("container");
+        for(let i = 0;i<container.length;i++){
+        container[i].classList.add("container_normal");
+      }
+      }
     }
-      $("#footer").removeClass("footer-fixed");
+    $("#footer").removeClass("footer-fixed");
       $("#footer").removeClass("footer-down");
       $("#zone").removeClass("zone");
+    }
   }
   }
-});
+);
 
 $(window).trigger("scroll");
 
