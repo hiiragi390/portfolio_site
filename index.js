@@ -14,6 +14,8 @@ let footer = document.getElementById("footer");
 })*/
 
 
+let modal = document.getElementsByClassName("modal");
+let modalOverlay = document.getElementsByClassName("modal-overlay");
 let closeButton1 = document.getElementById("close-button-1");
 let openButton1 = document.getElementById("open-button-1");
 let closeButton2 = document.getElementById("close-button-2");
@@ -70,6 +72,7 @@ function close(n) {
     modalOverlay3.classList.toggle("closed");
   }
   else if(this.n==4){
+
     modal4.classList.toggle("closed");
     modalOverlay4.classList.toggle("closed");
   }
@@ -98,34 +101,92 @@ closeButton6.addEventListener("click", {n:6, handleEvent:close});
 //closeButton7.addEventListener("click", {n:7, handleEvent:close});
 
 function open(n){
+  let open_modal = document.querySelector(".open");
+  let open_modalOverlay = document.querySelector(".open-overlay");
   body.classList.toggle("hold-back");
   if(this.n==1){
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }
     modal1.classList.toggle("closed");
     modalOverlay1.classList.toggle("closed");
+    modal1.classList.toggle("open");
+    modalOverlay1.classList.toggle("open-overlay");
   }
   else if(this.n==2){
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }
     modal2.classList.toggle("closed");
     modalOverlay2.classList.toggle("closed");
+    modal2.classList.toggle("open");
+    modalOverlay2.classList.toggle("open-overlay");
   }
   else if(this.n==3){
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }
     modal3.classList.toggle("closed");
     modalOverlay3.classList.toggle("closed");
+    modal3.classList.toggle("open");
+    modalOverlay3.classList.toggle("open-overlay");
   }
   else if(this.n==4){
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }
     modal4.classList.toggle("closed");
     modalOverlay4.classList.toggle("closed");
+    modal4.classList.toggle("open");
+    modalOverlay4.classList.toggle("open-overlay");
   }
   else if(this.n==5){
+    if(open_modal!=null){
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+    }
     modal5.classList.toggle("closed");
     modalOverlay5.classList.toggle("closed");
+    modal5.classList.toggle("open");
+    modalOverlay5.classList.toggle("open-overlay");
   }
   else if(this.n==6){
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }
     modal6.classList.toggle("closed");
     modalOverlay6.classList.toggle("closed");
+    modal6.classList.toggle("open");
+    modalOverlay6.classList.toggle("open-overlay");
   }
   else if(this.n==7){
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }
     modal7.classList.toggle("closed");
     modalOverlay7.classList.toggle("closed");
+    modal7.classList.toggle("open");
+    modalOverlay7.classList.toggle("open-overlay");
   }
 };
 
@@ -139,24 +200,39 @@ openButton6.addEventListener("click", {n:6, handleEvent:open});
 //openButton7.addEventListener("click", {n:7, handleEvent:open});
 
 
-
+var top_bottom = $(window).height();
 $(window).on('scroll', function(){
-  var top_bottom = $(window).height();
-  if(top_bottom <992){
+  if(top_bottom <800){
     if($(window).scrollTop() > 400){
     $("#footer").addClass("footer-fixed");
     $("#zone").addClass("zone");
   }else{
+    let open_modal = document.querySelector(".open");
+    let open_modalOverlay = document.querySelector(".open-overlay");
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }
     $("#footer").removeClass("footer-fixed");
     $("#footer").removeClass("footer-down");
     $("#zone").removeClass("zone");
   }
   }else{
-    let turn = top_bottom + 300;
+    let turn = top_bottom + 50;
     if($(window).scrollTop() > turn){
       $("#footer").addClass("footer-fixed");
       $("#zone").addClass("zone");
     }else{
+      let open_modal = document.querySelector(".open");
+      let open_modalOverlay = document.querySelector(".open-overlay");
+      if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }
       $("#footer").removeClass("footer-fixed");
       $("#footer").removeClass("footer-down");
       $("#zone").removeClass("zone");
