@@ -329,7 +329,7 @@ body{
 .pop-body{
     margin-top: 10px;
     height: 550px;
-    padding: 0 5%;
+    padding: 0 10%;
     overflow-y: scroll;
 }
 
@@ -504,7 +504,7 @@ iframe[src$=".pdf"] {
     }
 
     .modal{
-        height: 600px;
+        height: 750px;
         border-radius: 30px;
     }
 
@@ -517,11 +517,12 @@ iframe[src$=".pdf"] {
     }
 
     .pop-title {
-        margin-top: 0;
+        margin-top: 3%;
     }
 
     .pop-body {
-        padding: 0 5%;
+        padding: 0 8%;
+        height: 650px;
         overflow-y: scroll;
     }
 
