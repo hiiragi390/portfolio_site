@@ -32,6 +32,10 @@ let closeButton6 = document.getElementById("close-button-6");
 let openButton6 = document.getElementById("open-button-6");
 let closeButton7 = document.getElementById("close-button-7");
 let openButton7 = document.getElementById("open-button-7");
+let closeButton8 = document.getElementById("close-button-8");
+let openButton8 = document.getElementById("open-button-8");
+let closeButton9 = document.getElementById("close-button-9");
+let openButton9 = document.getElementById("open-button-9");
 var modal1 = document.getElementById("modal-1");
 var modalOverlay1 = document.getElementById("modal-overlay-1");
 var modal2 = document.getElementById("modal-2");
@@ -46,6 +50,10 @@ var modal6 = document.getElementById("modal-6");
 var modalOverlay6 = document.getElementById("modal-overlay-6");
 var modal7 = document.getElementById("modal-7");
 var modalOverlay7 = document.getElementById("modal-overlay-7");
+var modal8 = document.getElementById("modal-8");
+var modalOverlay8 = document.getElementById("modal-overlay-8");
+var modal9 = document.getElementById("modal-9");
+var modalOverlay9 = document.getElementById("modal-overlay-9");
 
 
 function tab_open(){
@@ -115,6 +123,14 @@ function close(n) {
     modal7.classList.toggle("closed","open");
     modalOverlay7.classList.toggle("closed","open-overlay");
   }
+  else if(this.n==8){
+    modal8.classList.toggle("closed","open");
+    modalOverlay8.classList.toggle("closed","open-overlay");
+  }
+  else if(this.n==9){
+    modal9.classList.toggle("closed","open");
+    modalOverlay9.classList.toggle("closed","open-overlay");
+  }
   body.classList.toggle("hold-back");
   toggle_container();
 };
@@ -127,6 +143,8 @@ closeButton4.addEventListener("click", {n:4, handleEvent:close});
 closeButton5.addEventListener("click", {n:5, handleEvent:close});
 closeButton6.addEventListener("click", {n:6, handleEvent:close});
 //closeButton7.addEventListener("click", {n:7, handleEvent:close});
+closeButton8.addEventListener("click", {n:8, handleEvent:close});
+closeButton9.addEventListener("click", {n:9, handleEvent:close});
 
 function open(n){
   let open_modal = document.querySelector(".open");
@@ -230,6 +248,34 @@ function open(n){
     modal7.classList.toggle("open");
     modalOverlay7.classList.toggle("open-overlay");
   }
+  else if(this.n==8){
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }else{
+      toggle_container();
+    }
+    modal8.classList.toggle("closed");
+    modalOverlay8.classList.toggle("closed");
+    modal8.classList.toggle("open");
+    modalOverlay8.classList.toggle("open-overlay");
+  }
+  else if(this.n==9){
+    if(open_modal!=null){
+      open_modal.classList.toggle("closed");
+      open_modalOverlay.classList.toggle("closed");
+      open_modal.classList.toggle("open");
+      open_modalOverlay.classList.toggle("open-overlay");
+    }else{
+      toggle_container();
+    }
+    modal9.classList.toggle("closed");
+    modalOverlay9.classList.toggle("closed");
+    modal9.classList.toggle("open");
+    modalOverlay9.classList.toggle("open-overlay");
+  }
 };
 
 //開くボタン
@@ -240,6 +286,9 @@ openButton4.addEventListener("click", {n:4, handleEvent:open});
 openButton5.addEventListener("click", {n:5, handleEvent:open});
 openButton6.addEventListener("click", {n:6, handleEvent:open});
 //openButton7.addEventListener("click", {n:7, handleEvent:open});
+openButton8.addEventListener("click", {n:8, handleEvent:open});
+openButton9.addEventListener("click", {n:9, handleEvent:open});
+
 
 console.log(top_bottom);
 $(window).on('scroll', function(){
