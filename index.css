@@ -324,6 +324,7 @@ body{
     margin-left: 17%;
     margin-right: 17%;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 .pop-body{
@@ -518,6 +519,7 @@ iframe[src$=".pdf"] {
 
     .pop-title {
         margin-top: 3%;
+        font-size: 28px;
     }
 
     .pop-body {
@@ -527,7 +529,8 @@ iframe[src$=".pdf"] {
     }
 
     .pop-body p{
-        font-size: 20px;
+        font-size: 18px;
+        margin: 8px auto;
     }
 
     .footer-inline {
@@ -650,6 +653,13 @@ iframe[src$=".pdf"] {
         margin-right: 50%;
         z-index: 20;
     }
+
+    .container_normal {
+        border-radius: 20px;
+        margin-left: 300px;
+        margin-right: 15%;
+        z-index: 0;
+    }
     
 
     .hold-back {
@@ -670,10 +680,10 @@ iframe[src$=".pdf"] {
     }
 
     .modal .close-button {
-        font-size: 3.6rem;
-        width: 65px;
-        height: 65px;
-        top: 20px;
+        font-size: 1.6rem;
+        width: 40px;
+        height: 40px;
+        top: 10px;
         right: 30px;
     }
 
@@ -685,6 +695,7 @@ iframe[src$=".pdf"] {
 
     .pop-title {
         margin-top: 0;
+        font-size: 30px;
     }
 
     .pop-body {
@@ -694,7 +705,13 @@ iframe[src$=".pdf"] {
     }
 
     .pop-body p {
-        font-size: 20px;
+        font-size: 18px;
+        margin: 8px auto;
+    }
+
+    .pop-media {
+        width: 90%;
+        height: auto;
     }
 
 
@@ -728,6 +745,10 @@ iframe[src$=".pdf"] {
 
     .footer-inline a div h3 {
         font-size: 18px;
+    }
+
+    .for-footer{
+        padding-bottom: 2%;
     }
 
 }
@@ -803,10 +824,10 @@ iframe[src$=".pdf"] {
     }
 
     .modal .close-button {
-        font-size: 3.6rem;
-        width: 65px;
-        height: 65px;
-        top: 20px;
+        font-size: 1.6rem;
+        width: 40px;
+        height: 40px;
+        top: 10px;
         right: 30px;
     }
 
@@ -819,6 +840,7 @@ iframe[src$=".pdf"] {
 
     .pop-title {
         margin-top: 0;
+        font-size: 30px;
     }
 
     .pop-body {
@@ -828,7 +850,8 @@ iframe[src$=".pdf"] {
     }
 
     .pop-body p {
-        font-size: 20px;
+        font-size: 18px;
+        margin: 8px auto;
     }
 
 
