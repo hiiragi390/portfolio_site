@@ -203,14 +203,19 @@ body{
     object-fit: cover;
 }
 
-.head-lead{
-    text-align: left;
-    margin-left: 5px;
+.article_img{
+    width: 100%;
+    height: auto;
 }
 
-.head-lead h2,p{
-    margin-top: 0px;
-    margin-bottom: 0px;
+.head-lead{
+    text-align: left;
+    margin: auto 5px;
+}
+
+.head-lead h2{
+    font-size: 40px;
+    margin: auto;
 }
 
 .head p{
@@ -231,7 +236,20 @@ body{
     text-align: left;
 }
 
+.prof_b{
+    margin-bottom: 20px;
+}
 
+.prof_b h3,h2,p{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.prof_img{
+    width: 100%;
+    height: auto;
+}
 
 /*.modal {
     display: block;
@@ -523,7 +541,7 @@ iframe[src$=".pdf"] {
     top: 0;
     bottom: 0;
     width: 10px;
-    background: #afdcf8;
+    background: rgb(255, 229, 206);
     left: 20%;
     margin-left: -10px;
 }
@@ -622,20 +640,42 @@ iframe[src$=".pdf"] {
     margin: 0 0 0 -25px;
 }
 
-.cbp_tmicon-phone:before {
-    content: "e000";
+.cbp_tmicon img{
+    width: 24px;
+    height: 24px;
+    margin: 8px auto;
 }
 
-.cbp_tmicon-screen:before {
-    content: "e001";
+.timeline_img{
+    width: 100%;
+    height: auto;
 }
 
-.cbp_tmicon-mail:before {
-    content: "e002";
+.move_button{
+    font-family: 'Noto Sans JP',
+        sans-serif;
+    margin: 10px;
+    margin-top: 15px;
+    min-width: 130px;
+    height: 40px;
+    color: rgb(255, 113, 57);
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background: #fff;
 }
 
-.cbp_tmicon-earth:before {
-    content: "e003";
+.move_button:hover {
+    background: rgb(255, 113, 57);
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 /* Example Media Queries */
@@ -687,6 +727,87 @@ iframe[src$=".pdf"] {
         left: auto;
         margin: -55px 5px 0 0px;
     }
+}
+
+/*
+.accordion {
+    max-width: 500px;
+    margin-bottom: 7px;
+}
+*/
+
+.accordion summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary::after {
+    transform: translateY(25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    content: '';
+    transition: transform .3s;
+}
+
+/*
+.accordion[open] summary::after {
+    transform: rotate(225deg);
+}
+*/
+
+.accordion p {
+    position: relative;
+    transform: translateY(-30px);
+    opacity: 0;
+    right: 80px;
+    margin-top: 20px;
+    padding: .8em 0.8em;
+    border: 2px solid #2589d0;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333333;
+    transition: transform .5s, opacity .5s;
+}
+
+.accordion[open]{
+    margin-top: 10px;
+}
+
+.accordion[open] p {
+    transform: none;
+    opacity: 1;
+}
+
+.accordion p::before,
+.accordion p::after {
+    position: absolute;
+    top: -15px;
+    left: 1.2em;
+    width: 30px;
+    height: 15px;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    content: '';
+}
+
+.accordion p::before {
+    background-color: #2589d0;
+}
+
+.accordion p::after {
+    top: -12px;
+    background-color: #fff;
+}
+
+.td_float {
+    align-items: unset;
+    margin-top: 35px;
 }
 
 @media (min-width: 768px) {
@@ -999,5 +1120,99 @@ iframe[src$=".pdf"] {
     h1 {
         text-shadow: 0 0 9px rgb(61, 45, 45);
         /*text-size-adjust: ;*/
+    }
+
+    .top {
+        font-size: 12vw;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .page-title {
+        margin-left: 5%;
+        font-size: 50px;
+    }
+
+    .container {
+        border-radius: 20px;
+        margin-left: 30%;
+        margin-right: 5%;
+    }
+
+    .modal {
+        height: 800px;
+        border-radius: 30px;
+    }
+
+    .modal .close-button {
+        font-size: 2.4rem;
+        padding: 6px 16px;
+        top: 20px;
+        right: 30px;
+    }
+
+    .pop-title {
+        margin-top: 0;
+    }
+
+    .pop-body {
+        margin-top: 10px;
+        height: 680px;
+        overflow-y: scroll;
+    }
+
+    .pop-body p {
+        font-size: 20px;
+    }
+
+    .skill_name {
+        height: 56px;
+        text-align: left;
+        width: 240px;
+        padding: 16px 10px;
+        font-size: 22px;
+        top: 0;
+    }
+
+    td img {
+        width: 32px;
+        height: auto;
+        margin: 0 24px;
+
+    }
+
+    .skill_pick {
+        width: 75px;
+        height: auto;
+    }
+
+
+
+    .footer-inline {
+        display: block;
+        width: 70%;
+        height: auto;
+        /*margin-left: 37%;
+        margin-top: 10%;*/
+    }
+
+    .footer-inline a {
+        margin: 10px;
+        margin-top: 30%;
+    }
+
+    .footer-fixed {
+        position: fixed;
+        top: 0px;
+        bottom: unset;
+        right: unset;
+        left: 5%;
+        z-index: 10;
+        animation-name: zoomOutAnime;
+        animation-duration: 0.2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
 }

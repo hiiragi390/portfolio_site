@@ -64,7 +64,14 @@ $("#zone").on('touchstart', function(e){
   }
 })
 
-
+function test(n){
+  if(n==1){
+    let addFloat = document.getElementsByClassName("td1");
+    for(let i = 0;i<addFloat.length;i++){
+      addFloat[i].classList.toggle("td_float");
+    }
+  }
+}
 
 const loading = document.querySelector( '.loading' );
  
