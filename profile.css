@@ -909,20 +909,16 @@ iframe[src$=".pdf"] {
 
     .footer-inline {
         display: block;
-        width: 60%;
+        width: 120%;
         height: auto;
-        margin-left: 37%;
+        margin-left: 45%;
         margin-top: 10%;
     }
-
-    .for-footer {
-        padding-bottom: 0;
-    }
-
 
     .footer-inline a {
         margin: 10px;
         margin-top: 30%;
+        display: block;
     }
 
     .footer-fixed {
@@ -938,6 +934,11 @@ iframe[src$=".pdf"] {
         opacity: 0;
     }
 
+    .for-footer {
+        padding-bottom: 0;
+    }
+
+
     button.pop-body-c {
         height: auto;
         text-size-adjust: auto;
@@ -949,7 +950,7 @@ iframe[src$=".pdf"] {
         font-size: 20px;
     }
 
-    .zone{
+    .zone {
         position: fixed;
         right: 0px;
         bottom: 0px;
@@ -986,11 +987,10 @@ iframe[src$=".pdf"] {
         }
     }
 
-    @media (min-width: 768px) {
-        .open-button {
-            padding: 13px 50px 13px;
-        }
+    .for-footer {
+        padding-bottom: 0;
     }
+
 }
 
 /*以下PC複タブ用*/
