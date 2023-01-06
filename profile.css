@@ -295,6 +295,19 @@ body{
 
 */
 
+.prof_other{
+    text-align: left;
+    padding: 20px 0;
+}
+
+.prof_other ul{
+    list-style: none;
+}
+
+.prof_other ul li{
+    list-style-image: url(resourse/icon/icon_prof_list.png);
+}
+
 table{
     table-layout: fixed;
     display: inline-block;
