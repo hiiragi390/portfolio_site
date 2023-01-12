@@ -1117,7 +1117,7 @@ iframe[src$=".pdf"] {
         top: 0px;
         bottom: unset;
         right: unset;
-        left: 15px;
+        left: 5%;
         z-index: 10;
         animation-name: zoomOutAnime;
         animation-duration: 0.2s;
@@ -1246,7 +1246,7 @@ iframe[src$=".pdf"] {
         top: 0px;
         bottom: unset;
         right: unset;
-        left: 15px;
+        left: 5%;
         z-index: 10;
         animation-name: zoomOutAnime;
         animation-duration: 0.2s;
