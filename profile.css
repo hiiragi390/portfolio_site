@@ -1099,15 +1099,17 @@ iframe[src$=".pdf"] {
 
     .footer-inline {
         display: block;
-        width: 70%;
+        width: 100%;
         height: auto;
         /*margin-left: 37%;
         margin-top: 10%;*/
     }
-    
+
     .footer-inline a {
         margin: 10px;
         margin-top: 30%;
+        width: 110px;
+        height: auto;
     }
 
     .footer-fixed {
@@ -1115,12 +1117,20 @@ iframe[src$=".pdf"] {
         top: 0px;
         bottom: unset;
         right: unset;
-        left: 5%;
+        left: 15px;
         z-index: 10;
         animation-name: zoomOutAnime;
         animation-duration: 0.2s;
         animation-fill-mode: forwards;
         opacity: 0;
+    }
+
+    .footer-inline a div h3 {
+        font-size: 18px;
+    }
+
+    .for-footer{
+        padding-bottom: 2%;
     }
 
 }
@@ -1218,7 +1228,7 @@ iframe[src$=".pdf"] {
 
     .footer-inline {
         display: block;
-        width: 70%;
+        width: 100%;
         height: auto;
         /*margin-left: 37%;
         margin-top: 10%;*/
@@ -1227,6 +1237,8 @@ iframe[src$=".pdf"] {
     .footer-inline a {
         margin: 10px;
         margin-top: 30%;
+        width: 110px;
+        height: auto;
     }
 
     .footer-fixed {
@@ -1234,11 +1246,19 @@ iframe[src$=".pdf"] {
         top: 0px;
         bottom: unset;
         right: unset;
-        left: 5%;
+        left: 15px;
         z-index: 10;
         animation-name: zoomOutAnime;
         animation-duration: 0.2s;
         animation-fill-mode: forwards;
         opacity: 0;
+    }
+
+    .footer-inline a div h3 {
+        font-size: 18px;
+    }
+
+    .for-footer {
+        padding-bottom: 2%;
     }
 }
